@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="dataService.js"></script>
+    <title>ILCS-TEST</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Input Data</h2>
+      <hr />
+      <form action="#">
+        <table>
+          <tr>
+            <td><label for="countries">Negara</label></td>
+            <td><input type="text" name="countries" id="countries" oninput="getDataCountry(value)" /></td>
+          </tr>
+          <tr>
+            <td><label for="harbors">Pelabuhan</label></td>
+            <td><input type="text" id="harbors" name="harbors" oninput="getHarborData(value)" /></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="vertical-align: top"><label for="items">Barang</label></td>
+            <td><input type="text" id="items" name="items" oninput="getDataDetail(value)" /></td>
+          </tr>
+          <tr>
+            <td><input style="height: 50px" type="text" id="details" name="details" /></td>
+          </tr>
+          <tr>
+            <td><label for="prices">Harga</label></td>
+            <td><input type="text" id="prices" name="prices" oninput="getTotal(value)" /></td>
+          </tr>
+          <tr>
+            <td rowspan="2" style="vertical-align: top"><label for="cukai">Tarif Bea Masuk</label></td>
+            <td><input style="width: 30px" type="text" id="cukai" name="cukai" disabled /><label for="percent"> %</label></td>
+          </tr>
+          <tr>
+            <td><input type="text" id="total" name="total" disabled /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
