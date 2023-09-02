@@ -8,10 +8,6 @@ const taxUrl = "https://insw-dev.ilcs.co.id/n/tarif?hs_code=";
 let countryCode = "";
 let customsData = 0;
 
-function clickMe() {
-  console.log("Hello you click me!");
-}
-
 async function getDataCountry(data) {
   const countryApi = countryUrl + data;
   if (data.length === 3) {
